@@ -8,6 +8,7 @@ const recipeSchema = mongoose.Schema(
 )
 
 recipeSChema.plugin(toJSON);
+userSchema.plugin(paginate);
 
 const Recipe = mongoose.model('Recipe', recipeSchema)
 
